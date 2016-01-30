@@ -1,0 +1,41 @@
+---
+title: "Supporting Documentation for Shiny Application"
+date: "29 January 2016"
+output: html_document
+---
+
+Summary
+---
+
+This application uses the <i> trees </i> data from the R package <i> datasets </i>
+
+This gives the Girth, Height and Volume for Black Cherry Trees </p>
+* Girth (inches) </n>
+* Height (ft) </n>
+* Volume (cubic ft) </n>
+
+The application has 3 outputs : </p>
+
+1.  A scatter plot of <i> variable x </i> against <i> variable y </i> with the user being able to choose which of the available variables to select.
+
+2. A loess line is plotted on the graph to depict the trend between the selected variables.
+
+3. The correlation coefficient is calculated and displayed below the plot.
+
+Deploying application
+---
+
+The following steps are for deploying this application via a personal PC:
+
+1.  Copy the server.R and ui.R into a folder in the R working directory named <i> Assignment-App </i>
+2.  Load the shiny library using the following command:
+
+                library("shiny")
+
+
+3.  The code below runs the application:
+
+                runApp("Assignment-App", display.mode = 'showcase')
+
+
+This will now show the Shiny application from which you can select the variables
